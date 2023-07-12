@@ -60,8 +60,6 @@ test_output = testDF.iloc[:,0].values
 train_input = scale(train_input,'Standardize')
 test_input = scale(test_input,'Standardize')
 
-print("palegkas gay")
-
 trainEN = np_utils.to_categorical(train_output).astype(float) #Encode training output to vectors of 0 and 1
 testEN = np_utils.to_categorical(test_output).astype(float) #Encode testing output to vectors of 0 and 1
 
